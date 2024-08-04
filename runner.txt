@@ -1,0 +1,5 @@
+hadoop jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming-3.3.6.jar \
+-mapper "$PWD/mapper.py" \
+-reducer "$PWD/reducer.py" \
+-input  /bd/large_data.json \
+-output /bd/output3
